@@ -1,0 +1,251 @@
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Media Queries ------------------ */
+
+
+
+
+@media (min-width: 320px) {
+
+  .name,
+  .main-nav,
+  .main-nav li {
+    text-align: center;
+    padding: 2px;
+    font-weight: bolder;
+  }
+
+  .main-nav li {
+    background: white;
+  }
+
+  .primary {
+    text-align: center;
+  }
+
+  .secondary {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .flex-container {
+    text-align: center;
+    margin: 5px;
+  }
+
+  .main-footer a {
+    text-transform: uppercase;
+  }
+
+  .main-footer {
+    width: 90%;
+		margin: 0 auto;
+  }
+
+
+  #main-nav {
+    float: right;
+  }
+
+  #main-nav li {
+    float: left;
+    margin-left: 12px;
+  }
+
+  #name {
+    float: left;
+  }
+
+  #hidden {
+    display: none;
+  }
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+@media (min-width: 768px) {
+
+  .container {
+    text-align: center;
+		width: 80%;
+		margin: 0 auto;
+	}
+
+  .main-header {
+    text-align: center;
+  }
+
+  .main-footer {
+    width: 90%;
+		margin: 0 auto;
+  }
+
+  .name,
+  .main-nav li {
+    display: inline-block;
+  }
+
+  .main-nav li {
+    background: none;
+  }
+
+  .col {
+    display: inline-block;
+    margin-right: -30px;
+    width: 50%;
+  }
+
+  .secondary {
+    float: left;
+    text-align: left;
+  }
+
+  .primary {
+    float: right;
+  }
+
+  #main-nav {
+    float: right;
+  }
+
+  #main-nav li {
+    float: left;
+    margin-left: 12px;
+  }
+
+  #name {
+    float: left;
+  }
+
+  .flex-container {
+    text-align: center;
+    margin: 20px;
+  }
+
+  .flex-item {
+    float: left;
+    width: 50%;
+    margin: 0 auto;
+    padding: 5px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  #hidden {
+    display: inherit;
+  }
+
+
+}
+
+
+@media (min-width: 1024px) {
+
+  .container,
+  .main-header,
+  .main-footer {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+  .col {
+    display: inline-block;
+    margin-right: -85px;
+    width: 50%;
+  }
+
+  .secondary {
+    float: left;
+    text-align: left;
+  }
+
+  .primary {
+    float: right;
+  }
+
+
+  .main-nav {
+    float: right;
+  }
+
+  .main-nav li {
+    float: left;
+    margin-left: 12px;
+  }
+
+  .main-nav li {
+    background: none;
+  }
+
+  .name {
+    float: left;
+  }
+
+  #main-nav {
+    float: right;
+  }
+
+  #main-nav li {
+    float: left;
+    margin-left: 12px;
+  }
+
+  #name {
+    float: left;
+  }
+
+
+  .container h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 15px;
+  }
+
+
+
+
+  .flex-container {
+    text-align: center;
+    margin: 20px;
+  }
+
+  .flex-item {
+    float: left;
+    width: 33.2%;
+    margin: 0 auto;
+    padding: 15px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  #hidden {
+    display: inherit;
+  }
+
+
+}

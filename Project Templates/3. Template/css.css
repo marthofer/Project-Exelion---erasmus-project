@@ -1,0 +1,158 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+/*HEADER*/
+.main_header {
+	width: 100%;
+	height: auto;
+	padding: 1% 0;	
+}
+.main_header h1 {
+	font-size: 5em;	
+	float: left;	
+}
+.main_menu {
+	list-style: none;	
+	float: right;
+	margin-top: 2%;
+	text-align: right;
+}
+.main_menu ul li {
+	display: inline-block;	
+	width: 100px;	
+}
+.main_menu ul li a{
+	text-decoration: none;
+	color: gray;	
+	padding: 2%;
+	width: 200px;
+	font-size: 1.5em;	
+}
+.active a{
+	color: red;
+}
+.main_header:before, .main_header:after {
+    content:"";
+    display:table;
+} 
+.main_header:after {
+    clear:both;
+}
+
+/*SHOWCASE*/
+.main_showcase {
+	background-image: url('main_Image.jpg');
+	margin-top: 2%;
+	width: 100%;
+	height: 400px;
+	color: white;	
+	border: solid black 1px;
+}
+.main_showcase hgroup, .main_showcase p {
+	margin: 3% 8%;
+}
+.main_showcase hgroup h1 {
+	font-size: 4em;
+}
+.main_showcase hgroup h2 {
+	font-size: 2em;
+}
+.main_showcase hgroup h3 {
+	font-size: 1.5em;
+}
+
+/*CONTENT*/
+.content {
+	width: 100%;
+	height: auto;
+	margin-top: 2%;		
+}
+.content .content_blocks {
+	width: 30%;
+	float: left;		
+}
+#content_block_01, #content_block_02 {
+	margin-right: 5%;
+}
+.content .content_blocks h1 {
+	font-size: 2em;
+}
+.content .content_blocks .icon {
+	float: left;
+	margin-right: 2%;	
+	width: 25px;
+	height: 25px;
+}
+.content_block_img {
+	border-radius: 10px;
+	margin-top: 2%;
+	width: 100%;
+}
+.content .content_blocks p {
+	text-align: justify;
+}
+.content .content_blocks p a{
+	font-size: 1em;
+	margin-top: 2%;
+	color: gray;
+	text-decoration: none;	
+}
+.content .content_blocks p:hover {
+	text-decoration: underline;	
+}
+.content:before, .content:after {
+    content:"";
+    display:table;
+} 
+.content:after {
+    clear:both;
+}
+
+/*FOOTER*/
+.main_footer {
+	margin-top: 5%;
+	width: 100%;
+	padding: 2% 0;
+	color: gray;	
+}
+.main_footer p {
+	float: left;
+}
+.main_footer .social{
+	float: right;
+}
+.main_footer .social img {
+	width: 25px;
+	height: 25px;
+}
+.main_footer:before, .main_footer:after {
+    content:"";
+    display:table;
+} 
+.main_footer:after {
+    clear:both;
+}
+
+/*MEDIA*/
+@media screen and (max-width: 750px) {
+	.main_menu {
+		float: left;	
+		margin: 0 auto;	
+		text-align: center;
+		width: 100%;
+	}
+	.content .content_blocks {
+		width: 100%;
+		clear: both;
+		margin: 2% 0;
+	}
+	#content_block_01, #content_block_02 {
+		margin-right: 0;
+	}
+}

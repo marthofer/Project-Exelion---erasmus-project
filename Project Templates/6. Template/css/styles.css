@@ -1,0 +1,286 @@
+/*============
+  Main Style
+============*/
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+.profile-image {
+  padding: 35px 50px;
+}
+body {
+  background-color: #B4A8D2;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3, h4 {
+  font-family: 'Francois One', sans-serif;
+}
+p, li {
+  font-size: 1.1em;
+  margin: 0 15px 10px 15px;
+  font-family: 'Didact Gothic', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #723E8E;
+}
+.nav-header, a, .contact h2, footer {
+  color: #5B4492;
+}
+.nav-link h3 {
+  color: #38373A;
+  background-color: #F8F7FA;
+  padding: 10px;
+  margin: 2px 15px;
+  border-radius: 2px;
+}
+.nav-link h3:hover {
+  color: #68676A;
+}
+.header-content, .contact {
+  color: #2E1863;
+}
+.portfolio {
+  color: #38373A;
+  background-color: #F8F7FA;
+}
+.portfolio-container {
+  padding-bottom: 50px;
+}
+.portfolio-heading {
+  padding: 35px 0 20px;
+}
+.section-image {
+  padding: 15px;
+}
+.skills {
+  color: #38373A;
+  background-color: #E0AB26;
+  margin: 0;
+  padding: 0 0 50px 0;
+}
+.skills h2 {
+  padding: 10px;
+}
+.skills ul li {
+  display: inline;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+.contact-title, .contact-info {
+  padding: 5px;
+  align-self: flex-end;
+}
+.contact-info {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+footer {
+  margin: 15px;
+  border-top: 1px solid #4E3883;
+}
+.contact {
+  padding: 0 0 35px 0;
+}
+.contact h2 {
+  padding: 10px;
+}
+.footer-nav-medium {
+  display: none;
+}
+
+/*=========
+  Flexbox
+=========*/
+
+header, nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.skills, ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.skills h2 {
+  color: #382800;
+  width: 100vw;
+}
+.skills ul li {
+  flex: 1 0 160px;
+}
+.contact-item {
+  display: flex;
+  justify-content: center;
+}
+footer {
+  display: flex;
+  justify-content: center;
+}
+footer h3 {
+  margin-right: auto;
+}
+
+/*===============
+  Media Queries
+===============*/
+
+@media screen and (min-width: 768px) {
+
+  .nav-link h3:hover {
+    color: #723E8E;
+  }
+  .nav-link h3 {
+    color: #5B4492;
+    background-color: #B4A8D2;
+  }
+  .profile-image {
+    padding: 0 30px 0 0;
+    width:100%;
+  }
+  .header-content {
+    padding: 35px 15px;
+    text-align: left;
+  }
+  .header-content p {
+    font-size: 1.3em;
+    padding-left: 30px;
+  }
+  .portfolio-container {
+    padding: 15px;
+  }
+  .section {
+    padding: 0 5px 50px;
+  }
+  .section-image {
+    padding: 0;
+    width: 100%;
+  }
+  footer {
+    margin: 10px 40px 35px;
+  }
+  .footer-nav-small {
+    display: none;
+  }
+  .footer-nav-medium {
+    display: inline-flex;
+    padding-left: 1em;
+  }
+  
+
+/*=========
+  Flexbox
+=========*/
+  nav {
+    flex-direction: row;
+    justify-content: center;
+  }
+  nav h1 {
+    width: 100vw;
+  }
+  .header-content {
+    display: flex;
+    justify-content: center;
+  }
+  .flex-image {
+    flex: 1;
+  }
+  .header-content p {
+    flex: 1.3;
+    order: -1;
+  }
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .portfolio-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .section {
+    max-width: 45vw;
+  }
+  .skills ul li {
+    flex: 1 0 220px;
+  }
+  .contact p {
+    padding: 0 15vw;
+  }
+  
+}
+
+@media screen and (min-width: 1024px) {
+
+  .portfolio {
+    margin: 20px;
+  }
+  
+/*=========
+  Flexbox
+=========*/
+
+  nav h1 {
+    width: auto;
+    margin-right: auto;
+  }
+  nav h1, .nav-link {
+    align-self: center;
+  }
+  .nav-link h3 {
+    padding-right: 40px;
+    margin: 0;
+  }
+  .nav-brand {
+    padding-left: 40px;
+    border-radius: 2px;
+  }
+  .header-content p {
+    margin: 0;
+    padding-right: 75px;
+  }
+  .section {
+    max-width: 30vw;
+  }
+  .skills {
+    margin: 20px 25vw;
+  }
+  
+}
+
+@media screen and (min-width: 1200px) {
+
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.8em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  .header-content p {
+    font-size: 2.1em;
+  }
+  p, li {
+    font-size: 1.6em;
+  }
+  .contact-info, .contact-title {
+    font-size: 1.5em;
+  }
+  
+}
